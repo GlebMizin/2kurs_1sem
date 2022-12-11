@@ -1,3 +1,0 @@
-@echo off
-cls
-DIR %1\*.%2
