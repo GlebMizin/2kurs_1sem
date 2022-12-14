@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "Введите первое число:"
+read a
+echo "Введите второе число:"
+read b
+echo "Введите количество элементов последовательности:"
+read N
+echo "Первые" $N "чисел фибоначи"
+i=1
+while [ $i -le $N ];
+do
+let "d=(( $b + $a ))"
+a=$b
+b=$d
+let "i+=1"
+echo "$b"
+done
+exit 0
