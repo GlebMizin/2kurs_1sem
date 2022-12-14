@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "Введите чило, факториал которого необходимо посчитать: "
+read counter
+factorial=1
+if [ $counter -le 0 ];
+then
+echo "Введите чило больше или не равное 0 "
+else
+while [ $counter -gt 0 ];
+do
+factorial=$(( $factorial * $counter))
+counter=$(( $counter - 1 ))
+done
+echo $factorial
+fi
+exit 0
